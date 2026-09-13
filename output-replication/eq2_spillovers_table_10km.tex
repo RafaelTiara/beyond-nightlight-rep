@@ -1,0 +1,49 @@
+\begin{table}[htbp]
+\centering
+\caption{Spillover effects of cash transfers on remotely sensed outcomes, 0.005$^\circ$ grid cells}
+\label{tab:eq2-spillovers}
+\begin{tabular}{lccc}
+\hline\hline
+ & (1) & (2) & (3) \\
+ & Building footprint & Tin-roof area & Night light \\
+ & (m$^2$) & (m$^2$) & (nW cm$^{-2}$ sr$^{-1}$) \\
+\hline
+\multicolumn{4}{l}{Panel A. First stage, dependent variable is own-cell transfer amount} \\
+Own-cell eligible share treated & 8.5988 & 8.5988 & 8.5988 \\
+ & (0.4056) & (0.4056) & (0.4056) \\
+Share treated 0 to 2 km & -1.5744 & -1.5744 & -1.5744 \\
+ & (0.3464) & (0.3464) & (0.3464) \\
+Share treated 2 to 4 km & -1.5068 & -1.5068 & -1.5068 \\
+ & (0.6961) & (0.6961) & (0.6961) \\
+Share treated 4 to 6 km & 0.2820 & 0.2820 & 0.2820 \\
+ & (0.7580) & (0.7580) & (0.7580) \\
+Share treated 6 to 8 km & -3.9369 & -3.9369 & -3.9369 \\
+ & (0.9848) & (0.9848) & (0.9848) \\
+Share treated 8 to 10 km & -4.6615 & -4.6615 & -4.6615 \\
+ & (1.6021) & (1.6021) & (1.6021) \\
+Excluded instruments $F$ & 344.2 & 344.2 & 344.2 \\
+\hline
+\multicolumn{4}{l}{Panel B. Second stage, two-stage least squares} \\
+Amt own cell & 16.32 & 16.90 & -0.001515 \\
+ & (35.46) & (17.49) & (0.002837) \\
+Amt 0 to 2 km & -0.58 & 0.43 & -0.000177 \\
+ & (12.70) & (5.31) & (0.001379) \\
+Amt 2 to 4 km & -1.17 & -0.39 & -0.000278 \\
+ & (8.22) & (3.70) & (0.000936) \\
+Amt 4 to 6 km & -2.27 & -0.56 & -0.000414 \\
+ & (5.85) & (2.81) & (0.000622) \\
+Amt 6 to 8 km & -2.80 & -1.48 & -0.000330 \\
+ & (7.84) & (3.32) & (0.000819) \\
+Amt 8 to 10 km & -2.34 & -1.39 & -0.000227 \\
+ & (6.90) & (3.03) & (0.000798) \\
+Sum of all amount terms & 7.15 & 13.50 & -0.002942 \\
+\hline
+Selected outer limit $\bar{R}$ (km) & 10 & 10 & 10 \\
+Observations & 2,501 & 2,501 & 2,501 \\
+\hline\hline
+\end{tabular}
+\begin{minipage}{\textwidth}
+\footnotesize
+Notes: each observation is a 0.005$^\circ$ grid cell. Transfer amounts are in thousands of US dollars, one thousand per recipient household, summed over the cell or the ring, with no normalization. Amounts in the own cell and in each 2 km ring are instrumented by the share of eligible households assigned to treatment in the corresponding cell or ring, following Egger, Haushofer, Miguel, Niehaus and Walker (2022). Outcomes are the midpoints of the bands published in \texttt{fig-map.csv}. The outer limit $\bar{R}$ is selected by BIC over nested models from 2 km to 20 km. Standard errors in parentheses are Conley standard errors with a uniform kernel and a 10 km cutoff.
+\end{minipage}
+\end{table}

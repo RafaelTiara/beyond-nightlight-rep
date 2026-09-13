@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+\centering
+\caption{Spillover effects of cash transfers on building stock, village level}
+\label{tab:eq2-village}
+\begin{tabular}{lcc}
+\hline\hline
+ & (1) & (2) \\
+ & Building footprint (m$^2$) & Building volume (m$^3$) \\
+\hline
+\multicolumn{3}{l}{Panel A. First stage, dependent variable is own-village transfer amount} \\
+Village treated & 33.9781 & 33.9781 \\
+ & (1.9555) & (1.9555) \\
+Share treated 0 to 2 km & -7.8973 & -7.8973 \\
+ & (1.7601) & (1.7601) \\
+Share treated 2 to 4 km & 0.1581 & 0.1581 \\
+ & (3.3304) & (3.3304) \\
+Excluded instruments $F$ & 525.8 & 525.8 \\
+\hline
+\multicolumn{3}{l}{Panel B. Second stage, two-stage least squares} \\
+Amt own village & 20.41 & 86.96 \\
+ & (8.94) & (44.56) \\
+Amt 0 to 2 km & 2.23 & 11.82 \\
+ & (3.20) & (14.38) \\
+Amt 2 to 4 km & -2.70 & -10.62 \\
+ & (2.09) & (9.02) \\
+Sum of all amount terms & 19.94 & 88.16 \\
+\hline
+Outcome mean & 6,860.65 & 27,378.96 \\
+Selected outer limit $\bar{R}$ (km) & 4 & 4 \\
+Baseline control & No & No \\
+Villages & 650 & 650 \\
+\hline\hline
+\end{tabular}
+\begin{minipage}{\textwidth}
+\footnotesize
+Notes: each observation is one of the 650 experimental villages. Outcomes are the building footprint and building volume inside the village convex hull in 2016, from Open Buildings 2.5D Temporal, counting 4 m pixels with building presence at or above 0.5. Transfer amounts are in thousands of US dollars, one thousand per recipient household, summed over the village or the ring, with no normalization. The own-village amount is instrumented by village treatment status and each ring amount by the share of eligible households assigned to treatment in that ring, following Egger, Haushofer, Miguel, Niehaus and Walker (2022). The outer limit $\bar{R}$ is selected by BIC over nested models from 2 km to 20 km. Standard errors in parentheses are Conley standard errors with a uniform kernel and a 10 km cutoff.
+\end{minipage}
+\end{table}

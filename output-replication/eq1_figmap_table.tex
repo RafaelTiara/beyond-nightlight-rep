@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\caption{Program effects on remotely sensed outcomes, 0.005$^\circ$ grid cells}
+\label{tab:eq1-figmap}
+\begin{tabular}{lccc}
+\hline\hline
+ & (1) & (2) & (3) \\
+ & Building footprint & Tin-roof area & Night light \\
+ & (m$^2$) & (m$^2$) & (nW cm$^{-2}$ sr$^{-1}$) \\
+\hline
+\multicolumn{4}{l}{Panel A. Equation 1, binned treatment intensity} \\
+1 recipient & 559.67 & 329.03 & -0.0033 \\
+ & (210.86) & (149.06) & (0.0154) \\
+2 recipients & 714.50 & 408.40 & 0.0426 \\
+ & (311.01) & (169.13) & (0.0284) \\
+More than 2 recipients & 404.23 & 365.34 & 0.0064 \\
+ & (180.20) & (109.72) & (0.0133) \\
+\hline
+\multicolumn{4}{l}{Panel B. Equation 2, linear treatment intensity} \\
+Recipients per cell & 26.27 & 31.48 & -0.0001 \\
+ & (14.69) & (9.72) & (0.0008) \\
+\hline
+Outcome mean & 4,692.17 & 2,862.55 & 0.2633 \\
+Observations & 2,501 & 2,501 & 2,501 \\
+\hline\hline
+\end{tabular}
+\begin{minipage}{\textwidth}
+\footnotesize
+Notes: each observation is a 0.005$^\circ$ grid cell with at least one eligible household. Outcomes are the midpoints of the published bands in \texttt{fig-map.csv}; building footprint and tin-roof area are converted from shares of cell area to square meters. Recipients and eligible households per cell are computed from the baseline household census. All specifications control flexibly for the number of eligible households. Standard errors in parentheses are Conley standard errors with a uniform kernel and a 3 km cutoff.
+\end{minipage}
+\end{table}
